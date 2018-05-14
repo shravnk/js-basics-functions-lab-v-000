@@ -14,14 +14,11 @@ function distanceTravelledInFeet(start, end) {
 
 function calculatesFarePrice(start, end) {
   const length = Math.abs(start - end)
-  switch (length) {
-    case (< 400) :
-      return 0
-    case (>= 400 && <= 2000):
-      return length*.02
-    case (> 2000 && <= 2500):
-      return 25
-    default:
-      'cannot travel that far'
-  }
+  if (length < 400) {
+      return 0 }
+  else if (length >= 400 && length <= 2000) {
+      return length*.02 }
+  else if (length > 2000 && length <= 2500) {
+      return 25 }
+  else {'cannot travel that far'}
 }
