@@ -17,7 +17,7 @@ function calculatesFarePrice(start, end) {
   if (length < 400) {
       return 0 }
   else if (length >= 400 && length <= 2000) {
-      return length*.02 }
+      return length *.02 }
   else if (length > 2000 && length <= 2500) {
       return 25 }
   else {'cannot travel that far'}
