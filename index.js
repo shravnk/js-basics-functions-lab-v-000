@@ -13,7 +13,7 @@ function distanceTravelledInFeet(start, end) {
 }
 
 function calculatesFarePrice(start, end) {
-  const length = Math.abs(start - end)
+  const length = distanceTravelledInFeet(start, end)
   if (length < 400) {
       return 0 }
   else if (length >= 400 && length <= 2000) {
